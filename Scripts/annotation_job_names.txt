@@ -1,4 +1,4 @@
-VL+	BM_vFP_VH_NKK-VL-pos_S22_result_aa-comp.txt
+VL-	BM_vFP_VH_NKK-VL-pos_S22_result_aa-comp.txt
 Rd1-Low	BM_vFP_R1_1_S1_result_aa-comp.txt
 Rd1-Med	BM_vFP_R1_2_S2_result_aa-comp.txt
 Rd1-High	BM_vFP_R1_3_S3_result_aa-comp.txt
