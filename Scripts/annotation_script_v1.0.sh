@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#First loop (sorting loop): is to get all input files (igblast_isotype_all2.txt) sorted in this layout ( Sequence "tab" prevelence "tab" line-count)
+#First loop (sorting loop): is to get all input files (igblast_isotype_all.txt) sorted in this layout ( Sequence "tab" prevelence "tab" line-count)
 #Input= raw data ($igblast_isotype.txt) &&&& output = sorted files ($FILENAMEsorted.txt) 
 #FILELIST contains tab-separated file descriptiosn (no spaces) in Column 1 followed by "tab" then the actual filename in Column 2 followed by "tab"
-# $1 is the variable for annotation_job_scripts.v.x
-#Run the command as : bash annotation_script_v1.1.sh annotation_job_names.txt VL+ unsorted file
+# $1 is the variable for annotation_job_script_v1.0.sh
+#Run the command as : bash annotation_script_v1.0.sh annotation_job_names.txt
 
 FILELIST=$1
 
 rm sortedfiles.txt
 SORTEDLIST=sortedfiles.txt
-MATCH=$2
+
 
 while read line
 do
@@ -53,7 +53,7 @@ done < $FILELIST
 
 echo > counterfile.txt
 
-cat $MATCH | sort -k 3,3 -u | awk -F "\t" '{print $3 "\t" $4 "\t" $5 "\t" $6}' > Seq_list.txt
+cat Part_2B_VH_NKK-VL-pos_S22_result_aa-comp.txt | sort -k 3,3 -u | awk -F "\t" '{print $3 "\t" $4 "\t" $5 "\t" $6}' > Seq_list.txt
 
 JOINFILE1=Seq_list.txt
 
@@ -99,15 +99,28 @@ echo
 echo "Header starting"
 echo 
 
-cat annotation_job_names_NNK.txt | awk -F "\t" '{print $1}' | tr '\n' '\t' | awk -F "\t" '{print "Description" "\t"  "\t" "\t" "\t" $1 "\t\t" $2 "\t\t" $3 "\t\t" $4 "\t\t" $5 "\t\t" $6 "\t\t" $7 "\t\t" $8 "\t\t" $9 "\t\t" $10 "\t\t" $11 "\t\t" $12 "\t\t" $13 "\t\t" $14 "\t\t" $15 "\t\t" $16 "\t\t" $17 "\t\t" $18 "\t\t" $19 "\t\t" $20}' > Header.txt 
+cat annotation_job_names.txt | awk -F "\t" '{print $1}' | tr '\n' '\t' | awk -F "\t" '{print "Description" "\t"  "\t" "\t" "\t" $1 "\t\t" $2 "\t\t" $3 "\t\t" $4 "\t\t" $5 "\t\t" $6 "\t\t" $7 "\t\t" $8 "\t\t" $9 "\t\t" $10 "\t\t" $11 "\t\t" $12 "\t\t" $13 "\t\t" $14 "\t\t" $15 "\t\t" $16 "\t\t" $17 "\t\t" $18 "\t\t" $19}' > Header.txt 
 
-cat annotation_job_names_NNK.txt | awk -F "\t" '{print $2}' | tr '\n' '\t' | awk -F "\t" '{print "Filename" "\t" "\t" "\t" "\t" $1 "\t\t" $2 "\t\t" $3 "\t\t" $4 "\t\t" $5 "\t\t" $6 "\t\t" $7 "\t\t" $8 "\t\t" $9 "\t\t" $10 "\t\t" $11 "\t\t" $12 "\t\t" $13 "\t\t" $14 "\t\t" $15  "\t\t" $16 "\t\t" $17 "\t\t" $18 "\t\t" $19 "\t\t" $20}' >> Header.txt
+cat annotation_job_names.txt | awk -F "\t" '{print $2}' | tr '\n' '\t' | awk -F "\t" '{print "Filename" "\t" "\t" "\t" "\t" $1 "\t\t" $2 "\t\t" $3 "\t\t" $4 "\t\t" $5 "\t\t" $6 "\t\t" $7 "\t\t" $8 "\t\t" $9 "\t\t" $10 "\t\t" $11 "\t\t" $12 "\t\t" $13 "\t\t" $14 "\t\t" $15  "\t\t" $16 "\t\t" $17 "\t\t" $18 "\t\t" $19}' >> Header.txt
 
-cat annotation_job_names_NNK.txt | awk -F "\t" '{print $1}' | tr '\n' '\t' | awk -F "\t" '{print "Data_type" "\t" "Original" "\t" "Substituted" "\t" "Position" "\t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "ER_" $2 "\t" "ER_" $3 "\t" "ER_" $4 "\t" "ER_" $5 "\t" "ER_" $6 "\t" "ER_" $7 "\t" "ER_" $8 "\t" "ER_" $9 "\t" "ER_" $10 "\t" "ER_" $11 "\t" "ER_" $12 "\t" "ER_" $13 "\t" "ER_" $14 "\t" "ER_" $15 "\t" "ER_" $16 "\t" "ER_" $17 "\t" "ER_" $18 "\t" "ER_" $19 "\t" "ER_" $20}' >> Header.txt
+cat annotation_job_names.txt | awk -F "\t" '{print $1}' | tr '\n' '\t' | awk -F "\t" '{print "Data_type" "\t" "Original" "\t" "Substituted" "\t" "Position" "\t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "Fraction \t" "Reads \t" "ER_" $2 "\t" "ER_" $3 "\t" "ER_" $4 "\t" "ER_" $5 "\t" "ER_" $6 "\t" "ER_" $7 "\t" "ER_" $8 "\t" "ER_" $9 "\t" "ER_" $10 "\t" "ER_" $11 "\t" "ER_" $12 "\t" "ER_" $13 "\t" "ER_" $14 "\t" "ER_" $15 "\t" "ER_" $16 "\t" "ER_" $17 "\t" "ER_" $18 "\t" "ER_" $19}' >> Header.txt
 
-cat Header.txt Enrich_R.txt > BM_vFP_NNK.txt
+cat Header.txt Enrich_R.txt > Part_2B_report.txt
 echo "Header finished"
 echo
+
+rm Seq_list.txt
+rm sortedfiles.txt
+rm tempfile1.txt
+rm tempfile2.txt
+rm counterfile.txt
+rm Enrich_R.txt
+rm Header.txt
+
+ls | grep round | grep join | xargs rm 
+ls | grep txtsorted.txt | xargs rm
+
+echo "Analysis is Completed"
 
 
 #Rember to insert spaces at the end of the file name! othewise bash will not recognise the last file 
