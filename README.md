@@ -15,4 +15,4 @@ Requirements:
 - IgBlast
 - Fastx_toolkit
 - FLASH
-  
+- usearch v5
