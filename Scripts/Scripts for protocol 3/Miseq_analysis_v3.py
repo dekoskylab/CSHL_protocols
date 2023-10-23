@@ -14,28 +14,17 @@ print (VDJaa_fname)
 cmd1='wc -l '+f_name
 output=os.system(cmd1)
 
-
 #Print amino acid sequences from IgBlast output files
-
-#cmd2='grep -v sequence '+f_name+ "|awk '"+'{if(length($48)>5) print  $15 }'+"' >"+VDJaa_fname+"_ff"
-#os.system(cmd2)
 
 cmd2='bash tab_to_fasta.sh ' + f_name + " " +  VDJaa_fname
 print(cmd2)
 os.system(cmd2)
-#cmd2_1='cat '+f_name+ "|awk '"+'{if(length($4)>5) print  $12 }'+"' >"+VDJaa_fname+"_addn"
-#os.system(cmd2_1)
-#cmd2_2='cat '+ VDJaa_fname+" "+ VDJaa_fname+"_addn "+" > "+VDJaa_fname+"_ff"
-#print (cmd2_2)
-#os.system(cmd2_2)
 
 cmd_tr = 'perl translate.pl -f 1 ' + VDJaa_fname + "_nt > " + VDJaa_fname + "_tr"
 cmd_cl = "fasta_formatter -i " + VDJaa_fname + "_tr | grep -v '^>' | sed 's/.*VLA//g' | sed 's/ASTG.*//g' > " + VDJaa_fname + "_ff"
 
 os.system(cmd_tr)
 os.system(cmd_cl)
-
-
 
 #Split files into smaller chunks
 cmd3='split -l 100000 '+VDJaa_fname+"_ff"+" "+VDJaa_fname+"_ff"+"_"
