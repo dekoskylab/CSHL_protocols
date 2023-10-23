@@ -6,7 +6,7 @@
 	3. Exp_name_report.txt 		This tab-separated file contains the results of the enrichment calculation scripts discussed in (2). The file can be directly imported to an Excel sheet for visualization and manual inspection & analysis.
 
 #Part_2B: Determining mutational functional impacts in a synthetic gene library
-	1. MiSeq_analysis_v2.py	This python script extract the column containing amino acid sequence of the variable region of heavy or light chain genes from the isotype_all.txt file generated in Step 1 of part 2B and writes to a separate file labelled with suffix *VDJaa.txt_ff. Each VDJaa.txt_ff generated is further split into 100,000 lines for further processing by jobsubmit.py script. 
+	1. MiSeq_analysis_v3.py	This python script extract the column containing nucleotide sequence of the variable region of heavy or light chain genes from the IgBlast output file generated in Step 1 and writes to a separate file labelled with suffix *VDJaa.txt_ff. Each VDJaa.txt_ff generated is further split into 100,000 lines for further processing by jobsubmit.py script. It uses two auxiliary scripts to transform the tabular data into fasta file and to translate the nucleotide sequence into an amino acid sequence.
 
 	2. jobsubmit.py	Trims amino acid sequences of the variable heavy and light chain genes provided in the VDJaa.txt file. 
 
