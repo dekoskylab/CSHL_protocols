@@ -1,6 +1,0 @@
-#!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --mem-per-cpu=10gb
-#SBATCH --output=mpi_%j.log
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=afahad@mgh.harvard.edu
