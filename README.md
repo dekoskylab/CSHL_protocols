@@ -11,8 +11,13 @@ Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKo
 
 Requirements:
 
-- A UNIX-like enviroment. A computer cluster running on SLURM is ideal.
+- A UNIX-like enviroment
+- SLURM workload manager
 - IgBlast
 - Fastx_toolkit
 - FLASH
 - usearch v5
+- perl5
+- Python3
+- Custom scripts in this repository
+  
