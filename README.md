@@ -1,7 +1,7 @@
-# CSHL_protocols
+# CSHL protocols: 
 This folder contains the scripts and example data associated with a publication led by Cold Spring Harbor Laboratory.
 
-"Quantitative analysis of functionally screened antibody repertoires for clonal identification and discovery"
+"Beyond Single Clones: High-Throughput Sequencing in Antibody Discovery" 
 
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
@@ -20,4 +20,10 @@ Requirements:
 - perl5
 - Python3
 - Custom scripts in this repository
+
+# Protocol description
+
+-Protocol 1: Clonal Variant Analysis of Antibody Engineering Libraries  
+  This protocol described a general method for tracking antibody clonal variants in display systems. In the example provided, the antibody vFP16.02 was diversified using site-saturation mutagenesis. 
+  This methods generates all possible one amino acid mutations across the variable region on the heavy chain and light chain. The sample data provided 
   
