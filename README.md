@@ -20,6 +20,7 @@ Requirements:
 - perl5
 - Python3
 - Custom scripts in this repository
+- Sample data provided in the manuscripts, or original HTS data in fastq format
 
 # Protocol description
 
@@ -29,4 +30,6 @@ Requirements:
 
 -Protocol 2: Antibody Data Analysis from Diverse Immune Libraries 
   This protocol is works in a similar way as Protocol 1. However, the input are immune libraries, which need to be aligned to germline V(D)J sequences.Next, clonal frequencies are calculated and the prevalence of each clone is calculates across sorting rounds. The prevalence is used to calculate an enrichment ratio. The sample data consist on immune libraries from donors recovering from ZIKV infection. Yeast libraries were sorted against ZIKV VLPs.
-  
+
+-Protocol 3: Clonal Lineage and Gene Diversity Analysis of Paired Antibody Heavy and Light Chains
+This protocol provides the tools for paired VH:VL analysis of immune repertoires. With these analysis, the users can obtain information on gene usage, antibody isotype, and clonal lineage analysis
