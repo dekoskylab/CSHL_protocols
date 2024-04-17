@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --partition=sixhour
 #SBATCH --ntasks-per-node=4
 #SBATCH --nodes=4
 #SBATCH --constraint=ib
@@ -7,4 +6,4 @@
 #SBATCH --time=0-06:00:00
 #SBATCH --output=mpi_%j.log
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=contact_bharat@ku.edu
+
