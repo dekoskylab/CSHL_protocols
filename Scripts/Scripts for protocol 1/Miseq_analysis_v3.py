@@ -5,7 +5,7 @@ import subprocess
 f_name=sys.argv[1]
 len_gene=sys.argv[2]
 template=sys.argv[3]
-mm=re.search('_L001',f_name).start()
+mm=re.search('_igblast',f_name).start()
 print (mm)
 expt_name=f_name[0:mm]
 print (expt_name)
