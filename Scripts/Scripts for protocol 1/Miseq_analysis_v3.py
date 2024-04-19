@@ -20,13 +20,16 @@ cmd2='bash tab_to_fasta.sh ' + f_name + " " +  VDJaa_fname
 print(cmd2)
 os.system(cmd2)
 
+#Translate and format nucleotide sequences
+
 cmd_tr = 'perl translate.pl -f 1 ' + VDJaa_fname + "_nt > " + VDJaa_fname + "_tr"
 cmd_cl = "fasta_formatter -i " + VDJaa_fname + "_tr | grep -v '^>' | sed 's/.*VLA//g' | sed 's/ASTG.*//g' > " + VDJaa_fname + "_ff"
 
 os.system(cmd_tr)
 os.system(cmd_cl)
 
-#Split files into smaller chunks
+#Split files into smaller chunks to generate jobsubmit.py commands
+
 cmd3='split -l 100000 '+VDJaa_fname+"_ff"+" "+VDJaa_fname+"_ff"+"_"
 os.system(cmd3)
 cmd4='ls | grep '+VDJaa_fname+"_ff"+'_'
@@ -44,6 +47,8 @@ for i in range (len(files)):
         os.system(cmd6)
         cmd7="sbatch temp_submit"
         os.system(cmd7)
+
+#Use filenames to generate sort_blast commands
 
 cmd="python sorting.py "+f_name+" "+len_gene+ " " + template
 cmd8="echo '"+cmd+"' >temp"
