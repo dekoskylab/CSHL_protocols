@@ -1,4 +1,4 @@
-VL_pos_Library	VL_pos_result_aa-comp.txt
+VL_pos	VL_pos_result_aa-comp.txt
 R1_v1_Low	R1_v1_Low_result_aa-comp.txt
 R1_v1_Med	R1_v1_Med_result_aa-comp.txt
 R1_v1_high	R1_v1_high_result_aa-comp.txt
