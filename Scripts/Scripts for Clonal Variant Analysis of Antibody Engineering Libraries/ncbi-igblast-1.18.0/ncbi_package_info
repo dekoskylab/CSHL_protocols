@@ -1,0 +1,66 @@
+PACKAGE_NAME: igblast
+PACKAGE_VERSION: 1.18.0
+PACKAGE_SIGNATURE: ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake11
+PACKAGE_CONFIG: Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-nghttp2=/netopt/ncbi_tools64/nghttp2-1.40.0 --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+
+>>>>>  igblastp
+
+igblastp: 1.18.0
+ Package: igblast 1.18.0, build Dec 11 2021 03:05:02
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-nghttp2=/netopt/ncbi_tools64/nghttp2-1.40.0 --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake11
+ GI-64bit:  TRUE
+ Build-Date:  Dec 11 2021 03:47:32
+ Build-ID:  b0506945-2cc1-466a-975e-e14f5419270f
+ Subversion-Revision:  642021
+ Development-Version:  20211122
+ Built-As:  igblastp
+
+
+
+>>>>>  igblastn
+
+igblastn: 1.18.0
+ Package: igblast 1.18.0, build Dec 11 2021 03:05:02
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-nghttp2=/netopt/ncbi_tools64/nghttp2-1.40.0 --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake11
+ GI-64bit:  TRUE
+ Build-Date:  Dec 11 2021 03:47:18
+ Build-ID:  b0506945-2cc1-466a-975e-e14f5419270f
+ Subversion-Revision:  642021
+ Development-Version:  20211122
+ Built-As:  igblastn
+
+
+
+>>>>>  makeblastdb
+
+makeblastdb: 2.13.0+
+ Package: igblast 1.18.0, build Dec 11 2021 03:05:02
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-nghttp2=/netopt/ncbi_tools64/nghttp2-1.40.0 --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake11
+ GI-64bit:  TRUE
+ Build-Date:  Dec 11 2021 03:47:44
+ Build-ID:  b0506945-2cc1-466a-975e-e14f5419270f
+ Subversion-Revision:  642021
+ Development-Version:  20211122
+ Built-As:  makeblastdb
+
+
+
+>>>>>  blastdbcmd
+
+blastdbcmd: 2.13.0+
+ Package: igblast 1.18.0, build Dec 11 2021 03:05:02
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-nghttp2=/netopt/ncbi_tools64/nghttp2-1.40.0 --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake11
+ GI-64bit:  TRUE
+ Build-Date:  Dec 11 2021 03:46:12
+ Build-ID:  b0506945-2cc1-466a-975e-e14f5419270f
+ Subversion-Revision:  642021
+ Development-Version:  20211122
+ Built-As:  blastdbcmd
+
+
+
+
