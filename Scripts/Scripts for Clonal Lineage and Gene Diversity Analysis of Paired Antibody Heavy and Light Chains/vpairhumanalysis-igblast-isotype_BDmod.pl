@@ -670,7 +670,6 @@ map {
 	}
 } keys (%seqs);
 close OutFile;
-print "\n\n=============!!BLAST COMPLETE!!=====================\n";
 
 #unlink "$infile1".'-temp1.txt';
 #unlink "$infile2".'-temp2.txt';
