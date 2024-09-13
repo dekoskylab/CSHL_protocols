@@ -1,19 +1,19 @@
 # CSHL protocols: 
 This folder contains the scripts and example data associated with the following publications:
 
-"Beyond Single Clones: High-Throughput Sequencing in Antibody Discovery" 
+**"Beyond Single Clones: High-Throughput Sequencing in Antibody Discovery"**
 
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
-"Clonal Variant Analysis of Antibody Engineering Libraries"
+**"Clonal Variant Analysis of Antibody Engineering Libraries"**
 
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
-"Antibody Data Analysis from Diverse Immune Libraries"
+**"Antibody Data Analysis from Diverse Immune Libraries"**
 
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
-"Clonal Lineage and Gene Diversity Analysis of Paired Antibody Heavy and Light Chains"
+**"Clonal Lineage and Gene Diversity Analysis of Paired Antibody Heavy and Light Chains"**
 
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
