@@ -1,8 +1,16 @@
 # CSHL protocols: 
-This folder contains the scripts and example data associated with a publication led by Cold Spring Harbor Laboratory.
+This folder contains the scripts and example data associated with the following publications:
 
 "Beyond Single Clones: High-Throughput Sequencing in Antibody Discovery" 
+Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
+"Clonal Variant Analysis of Antibody Engineering Libraries"
+Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
+
+"Antibody Data Analysis from Diverse Immune Libraries"
+Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
+
+"Clonal Lineage and Gene Diversity Analysis of Paired Antibody Heavy and Light Chains"
 Ahmed S. Fahad1*, Matias F. Gutierrez-Gonzalez1*, Bharat Madan1, Brandon J. DeKosky1,2**
 
 1-The Ragon Institute of MGH, Harvard, and MIT, Cambridge, MA, USA 2-Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA
