@@ -22,7 +22,7 @@ do
 
         #Send command for quality filtering, calling qualityfilter_script_human_v1.0.sh.  SPECIFY THE BARCODES REQUIRED USING THE INPUT BARCODES VARIABLE AT THE TOP
         rm $prefix"_queuelist.txt"
-        cat large_jobsubmit | awk -v file1=$file1 -v file2=$file2 -v prefix=$prefix -v barcodes=$barcodes '{print $0}; END {print "bash qualityfilter_script_human_v2.0.sh " file1 " " file2 " " prefix " " barcodes}' > $prefix"QFjobsubmit"
+        cat large_jobsubmit | awk -v file1=$file1 -v file2=$file2 -v prefix=$prefix -v barcodes=$barcodes '{print $0}; END {print "bash qualityfilter_script_human_v1.0.sh " file1 " " file2 " " prefix " " barcodes}' > $prefix"QFjobsubmit"
         sbatch $prefix"QFjobsubmit" | awk '{print $4 ","}' >> $prefix"_queuelist.txt"
         echo "Command ran successfully"
         cat $prefix"_queuelist.txt" | tr -d '\n' | tr -d '\r' | sed 's/^,/:/' | sed 's/,/:/g;s/:$//' > $prefix"_queuelist2.txt"
